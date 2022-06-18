@@ -14,7 +14,7 @@ def parse_args():
 	parser.add_argument("--n_hops", type=int, default=2, help="shufflet the data")
 	parser.add_argument("--shuffle", type=bool, default=True, help="shufflet the data")
 	parser.add_argument("--cuda", type=bool, default=True, help="use gpu or not")
-	parser.add_argument("--gpu_id", type=int, default=3, help="gpu id")
+	parser.add_argument("--gpu_id", type=int, default=0, help="gpu id")
 	parser.add_argument('--Ks', nargs='?', default='[1, 3, 5, 7, 10]', help='top-K list')
 	parser.add_argument("--batch_test_flag", type=bool, default=True, help="batch items")
 	parser.add_argument('--test_flag', nargs='?', default='part',
